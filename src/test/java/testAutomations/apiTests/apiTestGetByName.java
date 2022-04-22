@@ -11,7 +11,7 @@ import static org.junit.Assert.assertEquals;
 
 /**
  * Created by Emre ÖRS
- * Date 10.01.2022
+ * Date 22.04.2022
  */
 
 public class apiTestGetByName {

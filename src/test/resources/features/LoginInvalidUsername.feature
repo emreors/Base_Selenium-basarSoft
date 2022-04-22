@@ -1,10 +1,10 @@
 #Created by Emre ÖRS
-#Date 11.01.2022
+#Date 22.04.2022
 
 Feature: login functionality test with invalid username
 
-  Scenario: Check hepsiburada login screen
-    Given kullanici hepsiburada anasayfasina erisir
+  Scenario: Check domainAdresi login screen
+    Given kullanici domainAdresi anasayfasina erisir
     And ana sayfada giris yap butonu goruntulenir
     When kullanici giris yap butonuna tiklar
     Then kullanici login sayfasina yonlendirilir

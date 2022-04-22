@@ -13,7 +13,7 @@ import java.util.ArrayList;
 
 /**
  * Created by Emre ÖRS
- * Date 19.11.2019
+ * Date 22.04.2022
  */
 
 public class testExample extends testAutomations.TestBase {
@@ -50,11 +50,11 @@ public class testExample extends testAutomations.TestBase {
     @FindBy(xpath = "//div[contains(text(),'Satıcı')]")
     public WebElement saticiDropDownMultiSelect;
 
-    @FindBy(xpath = "//div[contains(text(),'Hepsiburada')]")
+    @FindBy(xpath = "//div[contains(text(),'domainAdresi')]")
     public WebElement satici1;
 
-    @FindBy(xpath = "//a[@title='Hepsiburada']//*[name()='svg']//*[name()='path' and contains(@d,'M11.525 6.')]")
-    public WebElement anasayfaHepsiburada;
+    @FindBy(xpath = "//a[@title='domainAdresi']//*[name()='svg']//*[name()='path' and contains(@d,'M11.525 6.')]")
+    public WebElement anasayfadomainAdresi;
 
     @FindBy(xpath = "//div[contains(text(),'Elektromanya')]")
     public WebElement satici2;
@@ -182,7 +182,7 @@ public class testExample extends testAutomations.TestBase {
         alisveriseDevamEtProductPagePopUp.click();
 
         js.executeScript("window.scrollBy(0, 0);");
-        Fwait.until(ExpectedConditions.visibilityOf(anasayfaHepsiburada));
+        Fwait.until(ExpectedConditions.visibilityOf(anasayfadomainAdresi));
 
         // İkinci satıcıdan Ürün ekleniyor..
         Thread.sleep(2000);
