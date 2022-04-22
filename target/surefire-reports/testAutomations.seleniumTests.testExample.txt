@@ -1,0 +1,19 @@
+-------------------------------------------------------------------------------
+Test set: testAutomations.seleniumTests.testExample
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 14.984 s <<< FAILURE! - in testAutomations.seleniumTests.testExample
+testExample(testAutomations.seleniumTests.testExample)  Time elapsed: 14.945 s  <<< ERROR!
+org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.xpath: //div[@id='myAccount']' (tried for 10 second(s) with 1000 milliseconds interval)
+	at testAutomations.seleniumTests.testExample.testExample(testExample.java:91)
+Caused by: org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"xpath","selector":"//div[@id='myAccount']"}
+  (Session info: chrome=100.0.4896.127)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-P13GE3T', ip: '10.42.1.160', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 100.0.4896.127, chrome: {chromedriverVersion: 100.0.4896.60 (6a5d10861ce8..., userDataDir: C:\Users\bsr\AppData\Local\...}, goog:chromeOptions: {debuggerAddress: localhost:52017}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: d2fd457453bdae5d41277c057008371b
+*** Element info: {Using=xpath, value=//div[@id='myAccount']}
+	at testAutomations.seleniumTests.testExample.testExample(testExample.java:91)
+
