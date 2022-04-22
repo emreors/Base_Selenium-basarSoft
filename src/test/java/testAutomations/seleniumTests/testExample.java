@@ -84,7 +84,7 @@ public class testExample extends testAutomations.TestBase {
     public WebElement sepettekiIkinciUrunElement;
 
     @Test
-    public void testOdev1() throws Exception {
+    public void testExample() throws Exception {
         PageFactory.initElements(driver, this);
         JavascriptExecutor js = (JavascriptExecutor) driver;
 
