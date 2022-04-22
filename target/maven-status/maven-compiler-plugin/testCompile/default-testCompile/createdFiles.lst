@@ -1,0 +1,9 @@
+testAutomations\stepsDefinitionForCucumber\LoginCredentials.class
+testAutomations\TestBase.class
+testAutomations\TestBase$1.class
+testAutomations\seleniumTests\testExample.class
+testAutomations\apiTests\apiTestGetByName.class
+testAutomations\Kullanici.class
+testAutomations\apiTests\apiTestGetAll.class
+testAutomations\apiTests\apiTestPost.class
+testAutomations\apiTests\HttpRequestMethodHelper.class
