@@ -9,7 +9,7 @@ import org.junit.Ignore;
 @Ignore
 public enum Kullanici {
 
-    KULLANICI1("emre.smfc@gmail.com", "B3n1m4d1m3mr3"),
+    KULLANICI1("mail@gmail.com", "password"),
     KULLANICI2("saaa", "bbbb");
 
     private String ad;
