@@ -1,6 +1,5 @@
 package testAutomations.seleniumTests;
 
-import testAutomations.Kullanici;
 import org.junit.Assert;
 import org.junit.Test;
 import org.openqa.selenium.JavascriptExecutor;
@@ -8,6 +7,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
+import testAutomations.Kullanici;
 
 import java.util.ArrayList;
 
