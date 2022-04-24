@@ -41,7 +41,6 @@ public class testExample extends testAutomations.TestBase {
     public WebElement hesabim;
 
     @FindBy(xpath = "//body/div[@id='container']/div[1]/div[1]/div[3]/div[1]/div[1]/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[2]/input[1]")
-//    @FindBy(xpath = "//input[@placeholder='Ürün, kategori veya marka ara']")
     public WebElement mainAramaBox;
 
     @FindBy(xpath = "//div[contains(text(),'ARA')]")
@@ -118,7 +117,7 @@ public class testExample extends testAutomations.TestBase {
 
         Fwait.until(ExpectedConditions.visibilityOf(girisYapButonuPassword));
         girisYapButonuPassword.click();
-        Thread.sleep(2000);
+        Thread.sleep(randomLong);
 
         Logger.info("Login Olunuyor.."); // Login Kontrolü
         try {
@@ -130,32 +129,32 @@ public class testExample extends testAutomations.TestBase {
         js.executeScript("arguments[0].scrollIntoView(true); window.scrollBy(0, -100);", mainAramaBox);
         Fwait.until(ExpectedConditions.visibilityOf(mainAramaBox));
         mainAramaBox.click();
-        Thread.sleep(2000);
+        Thread.sleep(randomLong);
         Logger.info("Ürün Arama alanı dolduruluyor..");
         mainAramaBox.sendKeys("iphone 11");
-        Thread.sleep(2000);
+        Thread.sleep(randomLong);
 
         Fwait.until(ExpectedConditions.visibilityOf(mainAramaButton));
         Logger.info("Ürün Arama Butonuna tıklanıyor..");
         mainAramaButton.click();
-        Thread.sleep(2000);
+        Thread.sleep(randomLong);
 
         // Birinci satıcıdan Ürün ekleniyor..
         js.executeScript("arguments[0].scrollIntoView(true); window.scrollBy(0,-200);", saticiDropDownMultiSelect);
         Fwait.until(ExpectedConditions.visibilityOf(saticiDropDownMultiSelect));
         saticiDropDownMultiSelect.click();
-        Thread.sleep(2000);
+        Thread.sleep(randomLong);
 
         Fwait.until(ExpectedConditions.visibilityOf(satici1));
         Logger.info(satici1.getText() + "Satıcısı seçiliyor..");
         satici1.click();
-        Thread.sleep(2000);
+        Thread.sleep(randomLong);
 
         Fwait.until(ExpectedConditions.visibilityOf(sayfadakiIlkUrun));
         js.executeScript("arguments[0].scrollIntoView(true); window.scrollBy(0, 0);", sayfadakiIlkUrun);
         Logger.info("Görüntülenen ilk ürüne tıklanıyor. ");
         sayfadakiIlkUrun.click();
-        Thread.sleep(2000);
+        Thread.sleep(randomLong);
 
         // Yeni sekme handle
         ArrayList<String> tabs2 = new ArrayList<String>(driver.getWindowHandles());
@@ -168,7 +167,7 @@ public class testExample extends testAutomations.TestBase {
         Logger.info("Seçilen ilk Ürün İsmi : " + urunAdiElement.getText());
         ilkSecilenUrun = urunAdiElement.getText();
 
-        Thread.sleep(2000);
+        Thread.sleep(randomLong);
 
         js.executeScript("arguments[0].scrollIntoView(true); window.scrollBy(0, -100);", sepeteEkleProductPage);
         Fwait.until(ExpectedConditions.visibilityOf(sepeteEkleProductPage));
@@ -185,7 +184,7 @@ public class testExample extends testAutomations.TestBase {
         Fwait.until(ExpectedConditions.visibilityOf(anasayfadomainAdresi));
 
         // İkinci satıcıdan Ürün ekleniyor..
-        Thread.sleep(2000);
+        Thread.sleep(randomLong);
 
         js.executeScript("arguments[0].scrollIntoView(true); window.scrollBy(0,-200);", saticiDropDownMultiSelect);
         Fwait.until(ExpectedConditions.visibilityOf(saticiDropDownMultiSelect));
@@ -196,13 +195,13 @@ public class testExample extends testAutomations.TestBase {
         Fwait.until(ExpectedConditions.visibilityOf(satici2));
         Logger.info(satici2.getText() + "Satıcısı seçiliyor..");
         satici2.click();
-        Thread.sleep(2000);
+        Thread.sleep(randomLong);
 
         Fwait.until(ExpectedConditions.visibilityOf(sayfadakiIlkUrun));
         js.executeScript("arguments[0].scrollIntoView(true); window.scrollBy(0, 0);", sayfadakiIlkUrun);
         Logger.info("Görüntülenen ilk ürüne tıklanıyor. ");
         sayfadakiIlkUrun.click();
-        Thread.sleep(2000);
+        Thread.sleep(randomLong);
 
         // Yeni sekme handle
         ArrayList<String> tabs3 = new ArrayList<String>(driver.getWindowHandles());
@@ -218,11 +217,11 @@ public class testExample extends testAutomations.TestBase {
         Fwait.until(ExpectedConditions.visibilityOf(sepeteEkleProductPage));
         js.executeScript("arguments[0].scrollIntoView(true); window.scrollBy(0, -100);", sepeteEkleProductPage);
         sepeteEkleProductPage.click();
-        Thread.sleep(2000);
+        Thread.sleep(randomLong);
 
         Fwait.until(ExpectedConditions.visibilityOf(sepeteGitPPPopUp));
         sepeteGitPPPopUp.click();
-        Thread.sleep(2000);
+        Thread.sleep(randomLong);
 
         Logger.info("---------------Seçilen Ürüneler----------------");
         Logger.info("Seçilen birinci ürün :" + ilkSecilenUrun);
@@ -241,6 +240,6 @@ public class testExample extends testAutomations.TestBase {
         }
 
         System.out.println("Test Tamamlandı!");
-        Thread.sleep(5000);
+        Thread.sleep(3000);
     }
 }
